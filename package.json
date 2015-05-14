@@ -1,0 +1,35 @@
+{
+  "name": "document-query-style",
+  "version": "0.0.0",
+  "description": "Select element(s) in a document with a computed style that matches the supplied query.",
+  "main": "index.js",
+  "scripts": {
+    "dist": "browserify --bare -s documentQueryStyle index.js > dqs.js && uglifyjs dqs.js -c > dqs.min.js",
+    "example": "bin/serve-example.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:colingourlay/document-query-style.git"
+  },
+  "keywords": [
+    "css",
+    "style",
+    "query"
+  ],
+  "author": {
+    "name": "Colin Gourlay",
+    "email": "colin@colin-gourlay.com",
+    "url": "http://colin-gourlay.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colingourlay/document-query-style/issues"
+  },
+  "homepage": "https://github.com/colingourlay/document-query-style",
+  "devDependencies": {
+    "beefy": "^2.1.5",
+    "browserify": "^10.2.0",
+    "uglify-js": "^2.4.21",
+    "watchify": "^3.2.1"
+  }
+}
