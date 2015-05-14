@@ -95,7 +95,7 @@ This module is designed to be `require`d into your project with a tool such as b
     $ npm install
     $ npm run dist
 
-You'll find two files in a newly created `dist/` directory (one of which is minified). Either drop that script into a page and access `documentQueryStyle` globally in your project, or use your AMD loader of choice.
+You'll find two new files in the root directory (one of which is minified). Either drop one of the scripts into a page and access `documentQueryStyle` globally in your project, or use your AMD loader of choice.
 
 ## Caveats
 
