@@ -1,6 +1,6 @@
 {
   "name": "document-query-style",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Select element(s) in a document with a computed style that matches the supplied query.",
   "main": "index.js",
   "scripts": {
