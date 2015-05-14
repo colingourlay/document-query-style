@@ -51,13 +51,13 @@ function polyfill(api) {
         throw new Error('Cannot polyfill API:', api);
     }
 
-    if (!document.queryStyle) {
+    if (!api.queryStyle) {
         api.queryStyle = function queryStyle() {
             return apiCall(arguments, true);
         };
     }
 
-    if (!document.queryStyleAll) {
+    if (!api.queryStyleAll) {
         api.queryStyleAll = function queryStyleAll() {
             return apiCall(arguments, false);
         };
